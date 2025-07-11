@@ -19,13 +19,12 @@ namespace TextRpg2
 
         public Player()
         {
-            string Name = name; // 플레이어 이름
-            int PlayerLevel = 1; // 레벨
-            string PlayerJob = "전사"; // 직업
-            int PlayerAttack = 10; // 공격력
-            int PlayerDefense = 5; // 방어력
-            int PlayerHealth = 100; // 체력
-            int PlayerGold = 1500; // 골드
+            PlayerLevel = 1; // 레벨
+            PlayerJob = "전사"; // 직업
+            PlayerAttack = 10; // 공격력
+            PlayerDefense = 5; // 방어력
+            PlayerHealth = 100; // 체력
+            PlayerGold = 1500; // 골드
         }
         
                 
@@ -38,15 +37,16 @@ namespace TextRpg2
                 Console.Clear();
                 Console.WriteLine("플레이어 상태를 확인합니다.\n");
 
-                Console.WriteLine($"플레이어 이름: {name}");
-                Console.WriteLine($"레벨: {PlayerLevel}");
-                Console.WriteLine($"직업: {PlayerJob}");
-                Console.WriteLine($"공격력: {PlayerAttack}");
-                Console.WriteLine($"방어력: {PlayerDefense}");
-                Console.WriteLine($"체력: {PlayerHealth}");
-                Console.WriteLine($"골드: {PlayerGold}");
+                Console.WriteLine($"Lv. {PlayerLevel}");
+                Console.WriteLine($"{name} ( {PlayerJob} )");
+                Console.WriteLine($"공격력 : {PlayerAttack}");
+                Console.WriteLine($"방어력 : {PlayerDefense}");
+                Console.WriteLine($"체력 : {PlayerHealth}");
+                Console.WriteLine($"Gold : {PlayerGold}");
 
                 Console.WriteLine("\n[0. 나가기]");
+                Console.WriteLine("\n원하시는 행동을 입력해주세요.");
+
                 string Exit = Console.ReadLine();
                 if (Exit == "0")
                 {

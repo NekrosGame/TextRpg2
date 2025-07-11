@@ -22,11 +22,12 @@
                 Console.WriteLine("[1. 상태 보기]");
                 Console.WriteLine("[2. 상점]");
                 Console.WriteLine("[3. 인벤토리]");
+                Console.WriteLine("\n원하시는 행동을 입력해주세요.");
+
 
                 switch (Console.ReadLine())
                 {
                     case "1": // 상태 보기
-                        Console.WriteLine($"{name}의 상태를 보여줍니다.");
                         player.DisplayStatus(); // Player 클래스의 DisplayStatus 메서드를 호출하여 상태를 보여줌
                         break;
                     case "2":
@@ -38,7 +39,7 @@
                         // 인벤토리 로직 추가
                         break;
                     default:
-                        Console.WriteLine("잘못된 입력입니다. 다시 시도해주세요.");
+                        Console.WriteLine("잘못된 입력입니다.");
                         continue; // 잘못된 입력인 경우 다시 입력을 받도록 루프를 계속 진행
                 }
             }

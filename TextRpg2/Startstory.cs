@@ -28,14 +28,14 @@ namespace TextRpg2
                 if (NameClear == "1")
                 {
                     Console.WriteLine($"그렇군요 당신의 이름은 {Playername} 입니다.");
-                    Thread.Sleep(1000); // 1초 지연
+                    Thread.Sleep(500); 
                     Console.Write("             ");
                     Console.Write("·  ");
-                    Thread.Sleep(1000); // 1초 지연
+                    Thread.Sleep(500); 
                     Console.Write("·  ");
-                    Thread.Sleep(1000); // 1초 지연
+                    Thread.Sleep(500); 
                     Console.Write("·  ");
-                    Thread.Sleep(1000); // 1초 지연
+                    Thread.Sleep(500); 
                     Console.Clear();
                     break;
                     

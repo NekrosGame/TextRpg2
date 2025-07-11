@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TextRpg2
 {
-    internal class Inventory
+    public class Inventory
     {
     }
 }
