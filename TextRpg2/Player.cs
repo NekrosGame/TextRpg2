@@ -46,6 +46,8 @@ namespace TextRpg2
 
                 Console.WriteLine("\n[0. 나가기]");
                 Console.WriteLine("\n원하시는 행동을 입력해주세요.");
+                Console.WriteLine(">> ");
+
 
                 string Exit = Console.ReadLine();
                 if (Exit == "0")
@@ -54,8 +56,8 @@ namespace TextRpg2
                 }
                 else
                 {
-                    Console.WriteLine("잘못된 입력입니다. 다시 시도해주세요.");
-                    continue; // 잘못된 입력인 경우 다시 입력을 받도록 루프를 계속 진행
+                    Console.WriteLine("잘못된 입력입니다.");
+                    continue;
                 }
             }
      

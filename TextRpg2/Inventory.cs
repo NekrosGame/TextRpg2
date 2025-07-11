@@ -8,5 +8,14 @@ namespace TextRpg2
 {
     public class Inventory
     {
+        public void DisplayInventory()
+        {
+            while (true)
+            {
+                break;
+            }
+
+
+        }
     }
 }

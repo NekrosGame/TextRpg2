@@ -11,23 +11,34 @@ namespace TextRpg2
     {
         public string Playername { get; private set; }
 
+        // 타자 효과 메서드 추가
+        public void TypeWrite(string text, int delay = 40)
+        {
+            foreach (char c in text)
+            {
+                Console.Write(c);
+                Thread.Sleep(delay);
+            }
+            Console.WriteLine();
+        }
+
         public void Start()
         {
-            Console.WriteLine("안녕하세요 여기는 테스트 공간입니다.");
-            Console.WriteLine("당신의 이름은 무엇인가요?");
+            TypeWrite("안녕하세요 여기는 테스트 공간입니다.");
+            TypeWrite("당신의 이름은 무엇인가요?");
             Playername = Console.ReadLine();
 
             Console.Clear();
 
             while(true)
             {
-                Console.WriteLine($"{Playername} 맞나요?\n");
+                TypeWrite($"{Playername} 맞나요?\n");
                 Console.WriteLine("[1. 네 맞습니다.]");
                 Console.WriteLine("[2. 아니요, 다시 입력하겠습니다.]");
                 string NameClear = Console.ReadLine();
                 if (NameClear == "1")
                 {
-                    Console.WriteLine($"그렇군요 당신의 이름은 {Playername} 입니다.");
+                    TypeWrite($"그렇군요 당신의 이름은 {Playername} 입니다.");
                     Thread.Sleep(500); 
                     Console.Write("             ");
                     Console.Write("·  ");
