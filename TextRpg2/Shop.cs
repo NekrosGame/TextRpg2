@@ -59,7 +59,8 @@ namespace TextRpg2
                 {
                     Console.WriteLine($"{item.ItemName}\t| {item.ItemType} +{item.ItemValue}\t| {item.ItemDescription}\t| {item.ItemPrice} Gold");
                 }
-                Console.WriteLine("\n[0. 나가기]");
+                Console.WriteLine("\n[1. 구매하기]");
+                Console.WriteLine("[0. 나가기]");
                 Console.WriteLine("\n원하시는 행동을 입력해주세요.");
 
                 string Exit = Console.ReadLine();
