@@ -20,7 +20,6 @@ namespace TextRpg2
         public Player()
         {
             PlayerLevel = 1; // 레벨
-            PlayerJob = "전사"; // 직업
             PlayerAttack = 10; // 공격력
             PlayerDefense = 5; // 방어력
             PlayerHealth = 100; // 체력
